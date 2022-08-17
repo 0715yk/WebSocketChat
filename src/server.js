@@ -16,6 +16,8 @@ const wss = new WebSocket.Server({ server });
 
 const sockets = [];
 
+console.log("this is testing server so don' be afraid about it");
+
 wss.on("connection", (socket) => {
   sockets.push(socket);
   // socket은 브라우저단에서 연결을 시도할 때마다 하나씩 생성된다(3 way handshake 때처럼 소켓 생성은 당연한거니까)
